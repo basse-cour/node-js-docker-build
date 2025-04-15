@@ -1,0 +1,11 @@
+name: $COMPOSE_PROJECT_NAME
+
+services:
+  bot:
+    image: ${IMAGE_NAME}/bot
+    build:
+      dockerfile: deploy.Dockerfile
+      context: .
+      args:
+        - NODE_TAG=${NODE_TAG}
+        - BOT_DIR=${BOT_DIR}
