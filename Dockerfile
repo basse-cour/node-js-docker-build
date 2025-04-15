@@ -17,6 +17,6 @@ RUN npm run build
 ### Production build
 
 # Remove dev dependencies
-RUN npm prune --production
+RUN npm prune --omit=dev
 
 CMD ["npm", "start"]
