@@ -4,7 +4,6 @@ services:
   bot:
     image: ${IMAGE_NAME}/bot
     build:
-      dockerfile: deploy.Dockerfile
       context: .
       args:
         - NODE_TAG=${NODE_TAG}
