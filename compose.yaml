@@ -2,7 +2,7 @@ name: $COMPOSE_PROJECT_NAME
 
 services:
   bot:
-    image: ${IMAGE_NAME}/bot
+    image: ${IMAGE_NAME}
     build:
       context: .
       args:
